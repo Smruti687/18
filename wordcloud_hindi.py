@@ -36,6 +36,7 @@ df = pd.DataFrame(data)
 def show_cloud(text, title):
     wc = WordCloud(
         font_path = r"C:\Windows\Fonts\Nirmala.ttc",
+        regexp = r"[\u0900-\u097F]+",
         background_color='white'
     ).generate(text)
 
